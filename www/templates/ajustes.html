@@ -1,0 +1,33 @@
+<ion-view title="Ajustes" id="page10">
+  <swipe-cards>
+    <swipe-card on-card-swipe="cardSwiped()" id="start-card">
+      Swipe down for a new card
+    </swipe-card>
+    <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
+      <div ng-controller="CardCtrl">
+        <div class="image">
+          <center>
+            <img ng-src="{{card.image}}">
+          </center>
+        </div>
+        <div class="button-bar">
+          <table width=100%>
+            <tr>
+              <td colspan="2" align="center">
+                <h3>{{card.title}}</h3>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+				  <img src="img/no.png" ng-click="goAway()" /> 
+              </td>
+			  <td align="center">
+                <img src="img/yes.png"  ng-click="goAway()" />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </swipe-card>
+  </swipe-cards>
+</ion-view> 

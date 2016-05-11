@@ -1,0 +1,13 @@
+<ion-view title="Receitas" id="page5" ng-controller="receitaCtrl">
+    <ion-content padding="true" class="has-header">
+        <ion-list>
+          <ion-item class="item-button-right" ng-repeat="produto in receitas" type="item-text-wrap" ui-sref="menu.receita">
+            
+            {{produto.name}}
+            <!--button class="button button-positive">
+              <i class="icon ion-arrow-right-b"></i>
+            </button-->
+          </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

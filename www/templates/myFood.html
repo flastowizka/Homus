@@ -1,0 +1,76 @@
+<ion-view title="homus" id="page1">
+    <ion-content padding="true" class="has-header">
+
+      
+<!--
+        <li class="item">Lista 1 em andamento</li>
+         <br />
+-->        
+        <div align="center">
+          <button class="button button-calm" ui-sref="menu.configuraO">
+            <i class="ion-plus-round"> CRIAR LISTA</i>
+          </button>
+        </div>
+        <br />       
+        <div align="center">
+          <i class="ion-ios-cart"></i> Listas de Compras
+        </div>
+        <br />       
+        <ion-list>
+          <ion-item class="item-button-right" ng-repeat="produto in listas" type="item-text-wrap" ui-sref="menu.lista">
+            {{produto.name}}
+          </ion-item>
+        </ion-list>       
+        <br />       
+        <div align="center">
+          <i class="ion-ios-timer-outline"></i> Receitas
+        </div>
+        <br />       
+        <ion-list>
+          <ion-item class="item-button-right" ng-repeat="produto in receitas" type="item-text-wrap" ui-sref="menu.receita">
+            {{produto.name}}
+          </ion-item>
+        </ion-list>
+        <!--
+        <br />
+        <br />
+         <div align="center">
+          <p style="opacity:0.65; -moz-opacity: 0.65; filter: alpha(opacity=65)">Não há lista criada!</p>
+        </div>
+        
+         <br /><br />
+         <div align="center"><hr  style="width: 80%"/></div>
+          <br />
+
+        <div align="center">Receitas</div>
+          <br />
+          <div class="row">
+          <li  class="col col-40">Receita 1</li>
+          <li  class="col col-40">Tempo</li>
+          <li class="col" ui-sref="menu.produto"><i class="icon ion-eye"></i></li>  
+
+          </div>
+        
+        <ion-list>
+
+          <ion-item ui-sref="menu.receitas">Mais Receitas</ion-item>
+        </ion-list>
+        
+        <br /><br />
+        <div align="center">
+          <p style="opacity:0.65; -moz-opacity: 0.65; filter: alpha(opacity=65)">Adquira os produtos de uma lista para obter receitas!</p>
+        </div>      
+        --> 
+    </ion-content>
+</ion-view>
+
+<script id="login.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">Login</h1>
+    </ion-header-bar>
+    <ion-content>
+      Hello!
+    </ion-content>
+  </ion-modal-view>
+</script>

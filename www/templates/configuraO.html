@@ -1,0 +1,20 @@
+<ion-view title="Configuração" id="page4">
+    <ion-content padding="true" class="has-header">
+        <form class="list">
+            <div class="item item-divider">
+                Compra para quantos dias?
+            </div>
+            <ion-item class="range range-positive">
+                {{$scope.days.value}}
+                <input type="range" min="1" max="30" value="1" step="1" ng-model="$scope.days.value">
+            </ion-item>
+            <div class="item item-divider">
+                Objetivo
+            </div>
+            <ion-radio ng-model="choice" ng-value="Perder">Perder peso</ion-radio>
+            <ion-radio ng-model="choice" ng-value="Manter">Manter peso</ion-radio>
+            <ion-radio ng-model="choice" ng-value="Ganhar">Ganhar peso</ion-radio>
+        </form>
+        <button class="button button-balanced  button-block" ng-click="criarLista()">OK</button>
+    </ion-content>
+</ion-view>

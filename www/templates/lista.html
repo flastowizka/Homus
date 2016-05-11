@@ -1,0 +1,55 @@
+<ion-view title="Lista" id="page8" ng-controller="listaCtrl">
+    <ion-content padding="true" class="has-header">
+        <ion-list>
+          <ion-checkbox class="item-button-right" ng-repeat="produto in lista" type="item-text-wrap" >
+            
+            {{produto.name}}
+            <!--button class="button button-positive">
+              <i class="icon ion-arrow-right-b"></i>
+            </button-->
+          </ion-checkbox>
+        </ion-list>
+        <!--
+        <div class="row">
+            <li class="col col-40"> Produto 1 </li>
+            <li class="col col-40">10 kg</li>
+            <li class="col" ui-sref="menu.produto"><i class="icon ion-eye"></i></li>        
+            <li class="col"><ion-checkbox ng-model="filter.blue"></ion-checkbox></li>
+        </div>
+
+        <div class="row">
+            <li class="col col-40"> Produto 2 </li>
+            <li class="col col-40">2 kg</li>
+            <li class="col" ui-sref="menu.produto"><i class="icon ion-eye"></i></li>
+            <li class="col"><ion-checkbox ng-model="filter.red"></ion-checkbox></li>
+        </div>
+
+        <div class="row">
+            <li class="col col-40"> Produto 3 </li>
+            <li class="col col-40">5 kg</li>
+            <li class="col" ui-sref="menu.produto"><i class="icon ion-eye"></i></li>
+            <li class="col"><ion-checkbox ng-model="filter.white"></ion-checkbox></li>
+        </div>
+        -->
+        <br />
+        <br />
+
+        <div align="center">
+            <button class="button" ng-click="scanBarcode()">
+              <i class="icon ion-camera"></i>
+            </button>            
+        </div>
+		
+		<div class="bar bar-footer bar-balanced"> <div class="title">Finalizar</div> </div>
+        <!--
+        <br />
+        <br />
+
+        <div align="center">
+            <button class="button button-full">
+              Ítens comprados
+            </button>            
+        </div>
+        -->
+    </ion-content>
+</ion-view>
